@@ -1,52 +1,38 @@
-// function add() {
-//     const displayElement = document.getElementById('answer');
-//     const num1 = Number(document.getElementById('fnum').value);
-//     const num2 = Number(document.getElementById('snum').value);
+function add() {
+    const displayElement = document.getElementById('answer');
+    const num1 = Number(document.getElementById('fnum').value);
+    const num2 = Number(document.getElementById('snum').value);
 
-//     numAdd = num1 + num2
-//     // return numAdd
-//     displayElement.innerHTML = `Answer: ${numAdd}`
-//     console.log(numAdd)
-    
-// }
+    const numAdd = num1 + num2
+    document.getElementById("demo").innerHTML = numAdd   
+}
 
+function sub() {
+    const num1 = Number(document.getElementById('fnum').value);
+    const num2 = Number(document.getElementById('snum').value);
 
-// function sub() {
-//     const num1 = document.getElementById('fnum').value;
-//     const num2 = document.getElementById('snum').value;
+    const numSub = num1 - num2
+    document.getElementById("demo").innerHTML = numSub
+}
 
-//     numSub = num1 - num2
-//     // return numSub
-//     console.log(numSub)
-// }
+function mul() {
+    const num1 = Number(document.getElementById('fnum').value);
+    const num2 = Number(document.getElementById('snum').value);
 
-// function mul() {
-//     const num1 = document.getElementById('fnum').value;
-//     const num2 = document.getElementById('snum').value;
+    const numMul = num1 * num2
+    document.getElementById("demo").innerHTML = numMul
+}
 
-//     numMul = num1 * num2
-//     // return numMul
-//     console.log(numMul)
-// }
+function div() {
+    const num1 = Number(document.getElementById('fnum').value);
+    const num2 = Number(document.getElementById('snum').value);
 
-// function div() {
-//     const num1 = document.getElementById('fnum').value;
-//     const num2 = document.getElementById('snum').value;
+    const numDiv = num1 / num2
+    document.getElementById("demo").innerHTML = numDiv
+}
 
-//     numDiv = num1 / num2
-//     // return numDiv
-//     console.log(numDiv)
-// }
-
-// function checkTest() {
-//     const displayElement = document.getElementById('answer');
-//     displayElement.innerHTML = `Answer: `
-    
-// }
-
-
-function signUp(){
-    const displayElement = document.getElementById("displayName")
-    console.log(displayElement.innerHTML)
-    console.log(2)
+function clear() {
+    document.getElementById('fnum').value = "";
+    document.getElementById('snum').value = "";
+    document.getElementById('demo').innerHTML = "";
 }
