@@ -31,7 +31,7 @@ function div() {
     document.getElementById("demo").innerHTML = numDiv
 }
 
-function clear() {
+function clearResult() {
     document.getElementById('fnum').value = "";
     document.getElementById('snum').value = "";
     document.getElementById('demo').innerHTML = "";
